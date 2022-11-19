@@ -31,3 +31,6 @@ export class AppModule {}
 
 ## Contributions
 Any suggestions, issues, bug-fixes, PR's are most welcomed. Thanks.
+
+## Note
+This project is currently in active development 🚧. Breaking changes are expected.

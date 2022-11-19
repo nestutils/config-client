@@ -1,6 +1,6 @@
 {
   "name": "@nestutils/config-client",
-  "version": "0.0.1-rc.1",
+  "version": "0.0.1-rc.2",
   "private": false,
   "description": "Config Client For NestJS",
   "main": "lib/index.js",
