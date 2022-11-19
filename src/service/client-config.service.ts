@@ -11,6 +11,8 @@ export class ClientConfigService {
    * @param {ClientConfigOptions} configOptions
    */
   constructor(configOptions: ClientConfigOptions) {
+    // Disable Colors In Logger.
+    process.env.NO_COLOR = 'true';
     this.configOptions = configOptions;
   }
 
