@@ -12,11 +12,12 @@ export class ClientConfigModule {
   static async forRootAsync(
     configOptions: ClientConfigOptions,
   ): Promise<DynamicModule> {
-    await ClientConfigService.load(configOptions);
+    const clientConfigService = new ClientConfigService(configOptions);
+    await clientConfigService.loadProperties();
     const clientConfigProvider = {
       provide: ClientConfigService,
       useFactory: (): ClientConfigService => {
-        return new ClientConfigService(configOptions);
+        return clientConfigService;
       },
     };
     return {
