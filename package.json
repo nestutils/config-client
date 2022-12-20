@@ -17,7 +17,7 @@
   ],
   "author": "Priyanshu Belwal",
   "dependencies": {
-    "@nestutils/logger": "^0.0.1-rc.5",
+    "@nestutils/logger": "^0.0.1-rc.6",
     "axios": "^1.2.1"
   },
   "devDependencies": {
